@@ -15,7 +15,7 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
-                    sh "docker build -t 0984835937/students-book . "
+                    sh "docker build -t stas123/students-book . "
                 }
             }
         }
@@ -33,7 +33,7 @@ pipeline  {
             steps {
                 echo " ============== pushing image =================="
                 sh '''
-                docker push 0984835937/students-book:latest
+                docker push stas123/students-book:latest
                 '''
             }
         }
